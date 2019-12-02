@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.eram.os"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:5:5-67
+11-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:6:5-81
+12-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:7:5-81
+13-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:8:5-75
+14-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:8:22-72
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:9:5-76
+15-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:9:22-73
+16
+17    <application
+17-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:11:5-45:19
+18        android:allowBackup="true"
+18-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.1] /home/hemazouzi/.gradle/caches/transforms-2/files-2.1/08aeb8dba05210f2377f96b56a653893/core-1.0.1/AndroidManifest.xml:22:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:13:9-43
+23        android:label="@string/app_name"
+23-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:14:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:15:9-54
+25        android:supportsRtl="true"
+25-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:16:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:17:9-40
+28        <activity android:name="org.eram.os.EramOS" >
+28-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:18:9-24:20
+28-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:18:19-41
+29            <intent-filter>
+29-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:19:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:20:17-69
+30-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:22:17-77
+32-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <service
+36-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:26:9-36:19
+37            android:name="org.eram.os.deploy.ServiceHandler"
+37-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:26:18-66
+38            android:exported="false" >
+38-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:27:13-37
+39            <intent-filter>
+39-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:28:13-30:29
+40                <action android:name="org.eram.os.deploy.ServiceHandler" />
+40-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:29:17-76
+40-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:29:25-73
+41            </intent-filter>
+42            <intent-filter>
+42-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:19:13-23:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:20:17-69
+43-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:20:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:22:17-77
+45-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:22:27-74
+46            </intent-filter>
+47        </service>
+48
+49        <receiver android:name="org.eram.os.deploy.ServiceDeployStarter" >
+49-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:38:9-44:20
+49-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:38:19-73
+50            <intent-filter>
+50-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:39:13-43:29
+51                <action android:name="android.intent.action.BOOT_COMPLETED" />
+51-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:40:17-79
+51-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:40:25-76
+52
+53                <category android:name="android.intent.category.HOME" />
+53-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:42:17-73
+53-->/mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-os/src/main/AndroidManifest.xml:42:27-70
+54            </intent-filter>
+55        </receiver>
+56
+57        <activity android:name="org.eram.test.tests" />
+57-->[:eram-common] /mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-common/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-56
+57-->[:eram-common] /mnt/data/baseFolder/MyPlateforms/ERAM-Project/eram-common/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:19-53
+58    </application>
+59
+60</manifest>
